@@ -9,15 +9,6 @@ import org.apache.poi.ss.usermodel.Row;
 import org.apache.poi.xssf.usermodel.XSSFSheet;
 import org.apache.poi.xssf.usermodel.XSSFWorkbook;
 
-/**
- * Note that the heap needs to be set to 1GB to run this.
- *
- * To improve performance, you can drop the primary keys on section_students and
- * section_mods. This roughly
- * doubles the speed. Note that the deletes from section_students and
- * section_mods depend upon foreign keys
- * with cascading deletes.
- */
 public class Demo {
 
     public static void writeOutput(String label1, String label2, String label3, double avg1, double avg2, double avg3)
